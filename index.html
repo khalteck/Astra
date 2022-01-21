@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>The Agency</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--font=josefin+sans-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+        <!--font=poppins-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!--stylesheet-->
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div id="header-div">
+                <nav id="navbar">
+                    <a href="#home">HOME</a>
+                    <a href="#properties">PROPERTIES</a>
+                    <a href="#about-section">ABOUT</a>
+                    <a href="#contact">CONTACT</a>
+                </nav>
+                <a href="#"><button class="call-now">CALL NOW</button></a>
+            </div>
+        </header>
+        <main>
+            <section id="home">
+                <div class="first-section-div">
+                    <h1 class="lets-get">Let's Get Your New <br>Address In Lagos.</h1>
+                    <p class="note">Contact us to get Land & Landed <br>Properties and Short-let Apartments in <br>Lagos.</p>
+                    <input type="text" placeholder="  Find Property" class="find"><br><br>
+                    <button>SEARCH</button>
+                </div>
+               
+            </section>
+
+            <div class="logo">
+            
+            </div>
+            <div class="heading-div">
+                <h1>OUR PROPERTIES</h1>
+                <hr>
+            </div>
+
+            <section id="properties">
+                <div class="catego">
+                    <p>Featured Listings</p>
+                </div>
+
+                <div class="slide">
+                    <img class="mySlides" src="white-house.jpg" style="width:100%" style="max-height:100%">
+                    <img class="mySlides" src="day-house-picture.jpg" style="width:100%" style="max-height:100%">
+                    <img class="mySlides" src="brown-house.jpg" style="width:100%" style="max-height:100%">
+                    <img class="mySlides" src="other-house.jpg" style="width:100%" style="max-height:100%">
+                </div>
+
+
+                <script>
+                    var myIndex = 0;
+                    carousel();
+                    
+                    function carousel() {
+                      var i;
+                      var x = document.getElementsByClassName("mySlides");
+                      for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";  
+                      }
+                      myIndex++;
+                      if (myIndex > x.length) {myIndex = 1}    
+                      x[myIndex-1].style.display = "block";  
+                      setTimeout(carousel, 5000); // Change image every 5 seconds
+                    }
+                </script>
+
+
+                <!--<div class="slide">
+                    <div class="address-button-div">
+                        <div class="address-div">
+                            <p>RAINBOW DRIVE | LEKKI PHASE ONE, LAGOS.</p>
+                            <p>5 BEDROOMS | 4 BATHROOMS.</p>
+                        </div>
+                        <button class="view-listing-button">VIEW LISTING</button>
+                    </div>
+                </div>-->
+                <a href="#" class="view-more-anchor"><button class="view-more">VIEW MORE LISTED PROPERTIES</button></a>
+            </section>
+
+            <section id="about-section">
+                <div id="about">
+                    <img src="lukenn-sabellano-xKzdCMGXqwk-unsplash.jpg" class="image-about">
+                    <div id="epistle">
+                        <p class="epistle-title">What you need to know about <span class="the-agency-phrase">The Agency</span>.</p>
+                        <p class="epistle-text">
+                            The Agency is the Real Estate Agency you can trust with a great understanding of the property market in Lagos. We help alleviate your 
+                            property search dilemma by providing you with the best value properties opening you to investment opportunities, great neighbourhoods and 
+                            comfortability.
+                            <br><br>
+                            Whether you're interested in purchasing a piece of land, buying a house or looking to get short-let apartments or house, Trust The Agency
+                            to get you the address you need.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="featured">
+                <div class="about-agency-phrase">
+                    <p>About The Agency</p>
+                </div>
+                <div id="featured-list-and-button">
+                    <div id="featured-list-container">
+                        <div class="grid-box1">
+                            <a href="#">
+                                <div class="box-div1">
+                                    <div class="view-listing">
+                                        <p>VIEW OUR LISTINGS</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-box2">
+                            <a href="#">
+                                <div class="box-div1">
+                                    <div class="view-listing">
+                                        <p>MEET OUR AGENTS</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-box3">
+                            <a href="#">
+                                <div class="box-div1">
+                                    <div class="view-listing">
+                                        <p>JOIN THE A-LIST</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid-box4">
+                            <a href="#">
+                                <div class="box-div1">
+                                    <div class="view-listing">
+                                        <p>DISCOVER YOUR DREAM HOME</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <br><br>
+                    
+                </div>
+            </section>
+
+
+            <section id="contact">
+                <div class="catego">
+                    <p>GET IN TOUCH</p>
+                </div>
+                <hr class="hr-klass">
+                <p class="help-you-out">We'd love to help you out..</p>
+                <br><br>
+                <div id="in-touch-div">
+                    <div class="box1">
+                        <div class="facebook-div">
+                        </div>
+                        <a href="#">
+                            <div class="icon-text-div">
+                                <img src="https://img.icons8.com/color/48/000000/facebook.png" class="facebook-icon">
+                                <br>
+                                <p class="connect-text">FIND US ON FACEBOOK</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="box2">
+                        <div class="insta-div">
+                        </div>
+                        <a href="#">
+                            <div class="icon-text-div">
+                                <img src="https://img.icons8.com/fluency/48/000000/instagram-new.png" class="facebook-icon">
+                                <br>
+                                <p class="connect-text">FIND US ON INSTAGRAM</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <br><br><br>
+                <hr>
+            </section>
+        </main>
+        <footer>
+            <div id="footer-divide-div">
+                <div class="half1">
+                    <p class="contact-details-text">Contact Details</p>
+                    <div id="contact-details-div">
+                        <ul>
+                            <li class="thicken">EMAIL ADDRESS</li><br>
+                            <li><a href="#" class="footer-links">simple@yetcoolwebsite.com</a></li>
+                        </ul>
+                        <ul>
+                            <li class="thicken">PHONE NUMBER</li><br>
+                            <li><a href="#" class="footer-links">+(123) 456 7890</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="half">
+                    <p class="contact-details-text">Receive Our Newsletter</p>
+                    <form action="mailto:khalidoyeneye@gmail.com" method="post" enctype="text/plain">
+                        <input type="text" placeholder="  Email Address" class="email-field">
+                        <br><br>
+                        <input type="submit" value="SUBSCRIBE" class="email-button">
+                    </form>
+                </div>
+            </div>
+            <div id="copyright">
+                <p class="last-line"><span class="the-agency-phrase">THE AGENCY</span> - COPYRIGHT © 2022</p>
+            </div>
+        </footer>
+    </body>
+</html>

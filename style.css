@@ -658,16 +658,16 @@ ul {
         transform: scale(1.2, 1.2);
     }
     #home {
-        width: 100vw;
+        width: 103vw;
         height: 95vh;
         background-image: url('../Astra/night-house-picture.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         padding-top: 100px;
         font-family: 'Josefin Sans', sans-serif;
-        position: static;
+        position: relative;
         top: 0;
-        left: 0;
+        left: -8px;
         z-index: 0;
     }
     .first-section-div {
@@ -711,14 +711,14 @@ ul {
         top: 140px;
     }
     #properties {
-        width: 100vw;
+        width: 103vw;
         height: 290px;
         text-align: center;
         background-color: #fafafa;
         padding-top: 0;
         margin-top: 70px;
-        position: static;
-        left: 0;
+        position: relative;
+        left: -8px;
         bottom: 80px;  /*added*/
         z-index: 0;
     }
@@ -780,11 +780,12 @@ ul {
         top: 40px;
     }
     #about-section {
-        width: 100vw;
+        width: 103vw;
         height: 650px;
         background-color: #f2f3f4;
         padding-top: 10px;
-        position: static;
+        position: relative;
+        left: -8;
         top: 0;
         z-index: 0;
     }
@@ -818,12 +819,12 @@ ul {
         color: #fcd535;
     }
     #featured {
-        width: 100vw;
+        width: 103vw;
         height: 780px;
         background-color: #000000;
         padding-top: 20px;
-        position: static;
-        left: 0;
+        position: relative;
+        left: -8px;
         z-index: 0;
     }
     .about-agency-phrase {
@@ -922,12 +923,12 @@ ul {
         border: 5px solid #000000;
     }
     #contact {
-        width: 100vw;
+        width: 103vw;
         height: 420px;
         background-color: #f2f3f4;
         padding-top: 20px;
-        position: static;
-        left: 0;
+        position: relative;
+        left: -8px;
         z-index: 0;
     }
     .hr-klass {
@@ -1002,14 +1003,14 @@ ul {
         transform: scale(0.8, 0.8);
     }
     footer {
-        width: 100vw;
+        width: 103vw;
         height: 580px;
         background-color: #000000;
         color: #ffffff;
         padding-top: 50px;
         font-family: 'Josefin Sans', sans-serif;
         position: relative;
-        left: 0;
+        left: -8pxc;
         bottom: -14px;
         z-index: 0;
     }

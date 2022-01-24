@@ -614,7 +614,7 @@ ul {
         transform: scale(1.2, 1.2);
     }
     #home {
-        width: 104vw;
+        width: 107vw;
         height: 95vh;
         background-image: url('../Astra/night-house-picture.jpg');
         background-repeat: no-repeat;
@@ -772,7 +772,7 @@ ul {
         color: #fcd535;
     }
     #featured {
-        width: 103vw;
+        width: 106vw;
         height: 780px;
         background-color: #000000;
         padding-top: 20px;
@@ -956,7 +956,7 @@ ul {
         transform: scale(0.8, 0.8);
     }
     footer {
-        width: 104vw;
+        width: 106vw;
         height: 580px;
         background-color: #000000;
         color: #ffffff;

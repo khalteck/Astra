@@ -666,7 +666,7 @@ ul {
         padding-top: 100px;
         font-family: 'Josefin Sans', sans-serif;
         position: relative;
-        top: 0;
+        top: -10px;
         left: -8px;
         z-index: 0;
     }

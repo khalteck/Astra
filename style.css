@@ -36,6 +36,9 @@ header:hover {
     position: relative;
     top: 19px;
 }
+#mobile-header-div {
+    display: none;
+}
 #navbar {
     width: 45%;
     display: flex;
@@ -175,29 +178,6 @@ hr {
 .mySlides {
     display: none;
 }
-/*.address-button-div {
-    width: fit-content;
-    height: fit-content;
-    position: relative;
-    top: 425px;
-    left: 20px;
-}
-.address-div {
-    width: fit-content;
-    height: fit-content;
-    color: #ffffff;
-    margin: auto;
-}
-.view-listing-button {
-    width: 200px;
-    height: 40px;
-    font-size: 13px;
-    font-weight: 700;
-    background-color: #000000;
-    color: #ffffff;
-    border: 1.5px solid #fcd535;
-    transition: all 0.3s ease-in;
-}*/
 .view-more {
     height: 50px;
     width: 40%;
@@ -515,4 +495,562 @@ ul {
     color: #fcd535;
     font-weight: 800;
     transform: scale(1.5, 1.5);
+}
+
+
+
+
+
+/*mobile site*/
+@media (max-width: 500px) and (min-width: 280px) {
+    html {
+        width: 100vw;
+        scroll-behavior: smooth;
+    }
+    body {
+        width: 100%;
+        background-color: #fafafa;
+        font-family: 'Josefin Sans', sans-serif;
+        overflow-x: hidden;
+    }
+    header {
+        width: 100%;
+        height: 70px;
+        background: rgba(255,255,255,0.6);
+        color: black;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 400;
+        text-align: left;
+        position: fixed;
+        top: 0;
+        left: 0;
+        box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.3);
+        z-index: 1;
+        transition: all 0.3s ease-in;
+    }
+    header:hover {
+        background-color: #fafafa;
+    
+    }
+    #header-div {
+        width: 70%;
+        height: 30px;
+        margin-right: 60px;
+        display: flex;
+        float: right;
+        justify-content: space-between;
+        position: relative;
+        top: 19px;
+    }
+    #mobile-header-div {
+        width: 100%;
+        height: 100%;
+        display: block;
+
+    }
+    #navbar {
+        width: 45%;
+        display: none;
+        justify-content: space-between;
+    }
+    button {
+        width: 150px;
+        height: 30px;
+        border: 2px solid #fcd535;
+        background: rgba(0,0,0,0.3);
+        color: #ffffff;
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 12px;
+        transition: all 0.3s ease-in;
+    }
+    button:hover {
+        background-color: #fcd535;
+        color: #ffffff;
+    }
+    .call-now {
+        position: relative;
+        bottom: 7px;
+        color: black;
+        background-color: inherit;
+        display: none;
+    }
+    .logo {
+        height: 100px;
+        width: 120px;
+        background-image: url('../Astra/logo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 3px solid #fcd535;
+        margin-left: 18px;
+        position: -webkit-sticky; /* Safari */
+        position: sticky;
+        top: 0;
+        z-index: 2;
+        display: none
+    }
+    .mobile-logo {
+        height: 96%;
+        width: 70px;
+        background-image: url('../Astra/logo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        border: 2px solid #fcd535;
+        z-index: 2;
+        display: block;
+    }
+    a {
+        text-decoration: none;
+        color: #000000;
+    }
+    header div#header-div nav#navbar a {
+        height: fit-content;
+        font-size: 13px;
+        transition: all 0.4s ease-out;
+    }
+    header div#header-div nav#navbar a:hover {
+        color: #fcd535;
+        font-weight: 800;
+        transform: scale(1.2, 1.2);
+    }
+    #home {
+        width: 104vw;
+        height: 95vh;
+        background-image: url('../Astra/night-house-picture.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-top: 100px;
+        font-family: 'Josefin Sans', sans-serif;
+        position: relative;
+        top: -10px;
+        left: -8px;
+        z-index: 0;
+    }
+    .first-section-div {
+        width: 85%;
+        height: 100%;
+        margin: auto;
+        display: block;
+        text-align: center;
+    }
+    .lets-get {
+        font-family: 'Josefin Sans', sans-serif;
+        font-weight: 300;
+        font-size: 30px;
+        color: #ffffff;
+        margin: auto;
+        position: relative;
+        top: 50px;
+    }
+    .note {
+        font-size: 16px;
+        color: #fcd535;
+        margin: auto;
+        position: relative;
+        top: 60px;
+    }
+    .find {
+        width: 90%;
+        height: 45px;
+        font-size: 14px;
+        border: 2px solid #fcd535;
+        box-sizing: border-box;
+        background: rgba(0,0,0,0.3);
+        color: #fff;
+        outline: none;
+        margin: auto;
+        position: relative;
+        top: 100px;
+    }
+    main section#home div.first-section-div button {
+        position: relative;
+        top: 100px;
+    }
+    #properties {
+        width: 100vw;
+        height: 260px;
+        text-align: center;
+        background-color: #fafafa;
+        padding-top: 0;
+        margin-top: 70px;
+        position: relative;
+        left: -10px;
+        bottom: 80px;  /*added*/
+        z-index: 0;
+    }
+    .heading-div {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 7px;
+        font-weight: 300;
+        color: #000000;
+        margin-top: 50px;
+        position: relative;
+        bottom: 10px;
+    }
+    hr {
+        width: 50%;
+    }
+    .catego {
+        width: fit-content;
+        height: fit-content;
+        font-size: 25px;
+        margin: auto;
+        position: relative;
+        top: 15px;
+    }
+    .slide {
+        width: 90%;
+        height: fit-content;
+        margin: auto;
+        /*background-image: url('../Astra/zac-gudakov-FH3zlDsY4Z4-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;*/
+    
+    }
+    .mySlides {
+        display: none;
+    }
+    .view-more {
+        height: 30px;
+        width: 50%;
+        font-size: 8px;
+        background-color: #000000;
+        color: #ffffff;
+        border: 2px solid #fcd535;
+        transition: all 0.3s ease-in;
+    }
+    .view-more:hover {
+        font-weight: 600;
+        background-color: #fcd535;
+        border: none;
+        color: #000000;
+    }
+    .view-more-anchor {
+        width: fit-content;
+        height: 30px;
+        margin: auto;
+        position: relative;
+        top: 40px;
+    }
+    #about-section {
+        width: 100vw;
+        height: 650px;
+        background-color: #f2f3f4;
+        padding-top: 10px;
+        z-index: 0;
+    }
+    #about {
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        display: block;
+        justify-content: space-between;
+        z-index: 0;
+    }
+    .image-about {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 20px;
+        box-shadow: 0px 2px 7px rgba(70, 50, 50, 0.4);
+    }
+    #epistle {
+        width: 100%;
+        display: block;
+    }
+    .epistle-title {
+        font-size: 22px;
+        font-weight: 900;
+    }
+    .epistle-text {
+        font-size: 14px;
+        line-height: 21px;
+    }
+    .the-agency-phrase {
+        color: #fcd535;
+    }
+    #featured {
+        width: 103vw;
+        height: 780px;
+        background-color: #000000;
+        padding-top: 20px;
+        position: relative;
+        left: -8px;
+        z-index: 0;
+    }
+    .about-agency-phrase {
+        width: fit-content;
+        height: fit-content;
+        font-size: 27px;
+        margin: auto;
+        color: #fcd535;
+    }
+    #featured-list-and-button {
+        width: 85%;
+        height: fit-content;
+        margin: auto;
+        text-align: center;
+    }
+    #featured-list-container {
+        width: 100%;
+        height: fit-content;
+        display: block;
+        justify-content: space-between;
+        
+    }
+    .grid-box1 {
+        width: 100%;
+        height: 200px;
+        background-image: url('../Astra/tierra-mallorca-NpTbVOkkom8-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.3s ease-in;
+        margin-bottom: 15px;
+        
+    }
+    .grid-box1:hover {
+        border: 5px solid #fcd535;
+        transform: scale(0.9, 0.9);
+    }
+    .grid-box2 {
+        width: 100%;
+        height: 200px;
+        background-image: url('../Astra/tierra-mallorca-rgJ1J8SDEAY-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.3s ease-in;
+        margin-bottom: 15px;
+    }
+    .grid-box2:hover {
+        border: 5px solid #fcd535;
+        transform: scale(0.9, 0.9);
+    }
+    .grid-box3 {
+        width: 100%;
+        height: 200px;
+        background-image: url('../Astra/kelly-sikkema-ABkfxGoB-RE-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.3s ease-in;
+    }
+    .grid-box3:hover {
+        border: 5px solid #fcd535;
+        transform: scale(0.9, 0.9);
+    }
+    .grid-box4 {
+        display: none;
+        width: 100%;
+        height: 250px;
+        background-image: url('../Astra/eyitayo-adekoya-tM12cRKHYmE-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 0.3s ease-in;
+    }
+    .grid-box4:hover {
+        border: 5px solid #fcd535;
+        transform: scale(0.9, 0.9);
+    }
+    .box-div1 {
+        width: 100%;
+        height: 100%;
+        background-color: #f7dd75;
+        opacity: 0.4;
+    }
+    .view-listing {
+        width: 85%;
+        height: 80px;
+        font-size: 21px;
+        font-weight: 900;
+        color: #000000;
+        margin: auto;
+        border: 5px solid #000000;
+        opacity: 1;
+        position: relative;
+        top: 50px;
+    }
+    .view-listing:hover {
+        width: 85%;
+        height: 80px;
+        border: 5px solid #000000;
+    }
+    #contact {
+        width: 100vw;
+        height: 420px;
+        background-color: #f2f3f4;
+        padding-top: 20px;
+        position: relative;
+        left: -10px;
+        z-index: 0;
+    }
+    .hr-klass {
+        width: 100px;
+        position: relative;
+        bottom: 3px;
+        
+    }
+    .help-you-out {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        font-size: 25px;
+    }
+    #in-touch-div {
+        width: 85%;
+        height: fit-content;
+        display: flex;
+        margin: auto;
+    }
+    .box1 {
+        width: 50%;
+        height: 150px;
+        background-image: url('../Astra/cloudy-bridge.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .box2 {
+        width: 50%;
+        height: 150px;
+        background-image: url('../Astra/voicu-apostol-93F3aiv_ioM-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .facebook-div {
+        width: 100%;
+        height: 100%;
+        background-color: #328dfd;
+        opacity: 0.5;
+    }
+    .insta-div {
+        width: 100%;
+        height: 100%;
+        background-color: #dd7283;
+        opacity: 0.5;
+    }
+    .facebook-icon {
+        margin: auto;
+        position: relative;
+        top: 7px;
+    }
+    .connect-text {
+        color: #fcd535;
+        font-size: 10px;
+        font-weight: lighter;
+        opacity: 1;
+    }
+    .icon-text-div {
+        width: 85%;
+        height: 80px;
+        border: 1.5px solid #fcd535;
+        position: relative;
+        bottom: 120px;
+        margin: auto;
+        text-align: center;
+        transition: all 0.4s ease-in;
+    }
+    .icon-text-div:hover {
+        background-color: #000000;
+        color: #ffffff;
+        border: none;
+        transform: scale(0.8, 0.8);
+    }
+    footer {
+        width: 104vw;
+        height: 580px;
+        background-color: #000000;
+        color: #ffffff;
+        padding-top: 50px;
+        font-family: 'Josefin Sans', sans-serif;
+        position: relative;
+        left: -8px;
+        bottom: -12px;
+        z-index: 0;
+    }
+    #footer-divide-div {
+        width: 90%;
+        height: 400px;
+        margin: auto;
+        display: block;
+        justify-content: space-between;
+    }
+    .half1 {
+        width: 100%;
+        height: 50%;
+        display: block;
+    }
+    .half {
+        width: 100%;
+        height: 50%;
+        display: block;
+        justify-content: left;
+    }
+    #copyright {
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+        position: relative;
+        top: 90px;
+    }
+    .last-line {
+        font-size: 12px;
+        font-weight: lighter;
+        color: #ffffff;
+    }
+    #contact-details-div {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        text-align: left;
+    }
+    .list {
+        width: 45%;
+        height: fit-content;
+        text-align: left;
+    }
+    .contact-details-text {
+        width: fit-content;
+        font-size: 25px;
+    }
+    ul {
+        list-style: none;
+    }
+    .thicken {
+        font-size: 18px;
+        font-weight: 200;
+    }
+    .email-field {
+        width: 99%;
+        height: 40px;
+        border: 1.5px solid #fcd535;
+        box-sizing: border-box;
+        background: rgba(0,0,0,0.3);
+        color: #fff;
+        outline: none;
+    }
+    .email-button {
+        height: 30px;
+        width: 140px;
+        margin: auto;
+        background-color: #000000;
+        color: #ffffff;
+        border: 1.5px solid #fcd535;
+        transition: all 0.4s ease-in;
+    }
+    .email-button:hover {
+        background-color: #fcd535;
+        border: none;
+        color: #000000;
+    }
+    .footer-links {
+        font-size: 14px;
+        text-decoration: none;
+        color: #ffffff;
+        transition: all 0.4s;
+    }
+    .footer-links:hover {
+        color: #fcd535;
+        font-weight: 800;
+        transform: scale(1.5, 1.5);
+    }
 }

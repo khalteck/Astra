@@ -565,7 +565,7 @@ ul {
     .dropbtn {
         width: 60px;
         height: 60px;
-        background-image: url('../Astra/icons8-menu-30.png');
+        background-image: url('https://img.icons8.com/ios/2x/menu.png');
         background-size: cover;
         background-repeat: no-repeat;
         border: 1px solid #fcd535;
@@ -573,8 +573,7 @@ ul {
         position: relative;
         left: 80px;
         top: 10px;
-        opacity: 0.9;
-        border: none;
+        opacity: 1;
         cursor: pointer;
     }
     #header-div {

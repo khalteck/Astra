@@ -568,6 +568,7 @@ ul {
         background-image: url('../Astra/icons8-menu-30.png');
         background-size: cover;
         background-repeat: no-repeat;
+        border: 1px solid #fcd535;
         font-size: 16px;
         position: relative;
         left: 80px;
